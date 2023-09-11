@@ -1,3 +1,9 @@
 [submodule "eigen3"]
-	path = eigen3
+	path = dependency/eigen3
 	url = https://gitlab.com/libeigen/eigen.git
+[submodule "dependency/opencv"]
+	path = dependency/opencv
+	url = https://github.com/opencv/opencv
+[submodule "dependency/opencv_contrib"]
+	path = dependency/opencv_contrib
+	url = https://github.com/opencv/opencv_contrib
