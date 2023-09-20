@@ -37,7 +37,15 @@ mkdir opencv && cd opencv
 cmake -D CMAKE_BUILD_TYPE=RELEASE `
     -D OPENCV_GENERATE_PKGCONFIG=ON `
     -D OPENCV_EXTRA_MODULES_PATH=../../dependency/opencv_contrib/modules `
-    -D WITH_GSTREAMER=ON ../../dependency/opencv/
+    -D BUILD_TESTS=OFF `
+    -D BUILD_PERF_TESTS=OFF `
+    -D BUILD_opencv_java=OFF `
+    -D BUILD_opencv_python2=OFF `
+    -D BUILD_opencv_python3=OFF `
+    -D WITH_GSTREAMER=ON `
+    -D WITH_TBB=ON `
+    -D CMAKE_LIBRARY_PATH="C:/Program Files (x86)/TBB/lib" `
+    -D WITH_OPENMP=ON ../../dependency/opencv/
 cmake --build . --target install
 ```
 
@@ -66,3 +74,20 @@ cmake --build .
 # run hw0
 ./Debug/Transformation.exe
 ```
+
+## Todo List
+
+- [ ] Fix dependency installation guidance
+  - [x] Eigen3
+  - [ ] OpenCV
+  - [x] GStreamer
+  - [ ] OneTBB
+- [ ] Finish all homework
+  - [x] hw1
+  - [x] hw2
+  - [ ] hw3
+  - [ ] hw4
+  - [ ] hw5
+  - [ ] hw6
+  - [ ] hw7
+  - [ ] hw8
