@@ -85,9 +85,9 @@ cmake --build .
 - [ ] Finish all homework
   - [x] hw1
   - [x] hw2
-  - [ ] hw3
-  - [ ] hw4
-  - [ ] hw5
+  - [x] hw3
+  - [x] hw4
+  - [x] hw5
   - [ ] hw6
   - [ ] hw7
   - [ ] hw8
